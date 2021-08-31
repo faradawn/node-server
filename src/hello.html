@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>My Hello</title>
   <script>
+
     function handle(){
       var ele = document.getElementById('title')
       if(ele.style.color === 'red'){
@@ -14,12 +15,16 @@
         ele.style.setProperty('color', 'red')
       }
     }
+
   </script>
+  <script data-main="scripts/main" src="scripts/require.js"></script>
 </head>
 <body>
   <div>
     <h1 id='title'>Hello!</h1>
     <button onclick="handle()">Change Me</button>
+    <button onclick="luckNum()">Give Me Five</button>
+    <p id='luckyNum'></p>
   </div>
 </body>
 </html>
