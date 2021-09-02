@@ -7,8 +7,7 @@ require.config({
   }
 });
 
-require(['myScripts', 'jquery', 'lodash', 'script2'], function(myScripts, $, _, a){
+require(['myScripts', 'jquery', 'lodash'], function(myScripts, $, _){
   $('#button-1').click(function(){myScripts.changeColor(1)})
   $('#button-2').click(function(){myScripts.setResult(_.random(1,5))})
-  console.log(a)
 });
