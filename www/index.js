@@ -1,5 +1,5 @@
 require.config({
-  baseUrl: './lib', // 默认为index.html所在的目录
+  baseUrl: '/www/lib', // 默认为index.html所在的目录
   paths: {
       myScripts: '../app/myScripts', // 相对于 baseUrl path
       jquery: ['https://cdn.bootcdn.net/ajax/libs/jquery/3.6.0/jquery'], // CDN path
