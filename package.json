@@ -1,4 +1,8 @@
 {
+  "name": "node-server",
+  "scripts": {
+    "start": "node server.js"
+  },
   "dependencies": {
     "lodash": "^4.17.21"
   }

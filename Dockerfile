@@ -1,18 +1,17 @@
-# disk image base 
+# syntax=docker/dockerfile:1
+
 FROM node:12 
 
 WORKDIR /app
 
-COPY package.json ./
+COPY package.json /app
 
-COPY yarn.lock ./
+COPY yarn.lock /app
 
 RUN yarn install
 
 COPY . .
 
-ENV PORT=7000
-
 EXPOSE 7000
 
-CMD ["node", "server.js"]
+CMD ["yarn", "start"]
